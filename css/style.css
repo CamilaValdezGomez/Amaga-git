@@ -55,34 +55,14 @@ header .menu li:hover {
     width: 100%;
     height: 100%;
 }
-.perrito {
-    display: flex;
-  }
 
-  .perrito img {
-    object-fit: cover;
-    width: 30%;
-    height: auto;
-  }
-
-  .perrito .text {
-    margin: auto;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    height: 100%;
-  }
-  .perrito h1, .perrito p{
-    margin: 0;
-    text-align: center;
-  }
-  .perrito p{
-    margin-left: 10%;
-    margin-right: 10%;
-  }
   /* CIERRE INDEX */
 
-
+/*GENERALES*/
+p{
+  font-size: 20px;
+}
+/*cierre*/
 
 
 
@@ -164,10 +144,28 @@ header .menu li:hover {
 
 /*APERTURA PRODUCTOS*/
 /* INCIENSOS */
+
+.aceites p{
+font-size: 2em;
+
+}
+.letra2{
+font-size: 6em;
+margin-top: 20px;
+background-image:  linear-gradient(to right,#371A39, #A15354,#BD7967 );
+}
+
+.letra3 {
+  margin-top: 2px;
+  text-align: center;
+}
+
+
 .inciensoss {
-    width: 23vw;
+    width: 27vw;
     text-align: center;
     padding: 8px;
+
 }
 
 .tarjeta-incienso {
@@ -175,54 +173,65 @@ header .menu li:hover {
     flex-direction: row;
     flex-wrap: wrap;
     display: flex;
+    justify-content: center;
+    align-items: center;
+    
 }
 .contenedor-tarjeta {
     display: flex;
     flex-wrap: wrap;
   }
   
-  .tarjeta-incienso > div {
-    width: 100%;
-    max-width: 250px;
-    margin: 10px;
-    text-align: center;
+  .tarjeta-incienso  {    
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
   }
   
+
+/* CIERRE INCIENSOS */
+
+/*ACEITES*/
 
 
   .aceites {
     width: 23vw;
     text-align: center;
-    padding: 8px;
+    padding: 2%;
+    margin:5%;
+
+
 }
+
+.aceites p{
+  font-size: 2em;
+  
+  }
 
 .tarjeta-aceite {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    display: flex;
-}
-.contenedor-aceite {
-    display: flex;
-    flex-wrap: wrap;
-  }
+    justify-content: center;
   
-  .tarjeta-aceite > div {
-    width: 100%;
-    max-width: 250px;
-    margin: 10px;
-    text-align: center;
-  }
+}
+  
 
   
 .margin {
     margin: 16px;
 }
-/* CIERRE INCIENSOS */
+
+@media (min-width: 768px) { 
+  .tarjeta-aceite {
+      flex-direction: row;
+      width: 48%; 
+  }
+}
 
 
 
-/* ACEITES */
+
 /*CIERRE ACEITES*/
 
 
@@ -314,3 +323,47 @@ header .menu li:hover {
    margin-top: 6%;
   }
   /* CIERRE FOOTER */
+
+  /*PRUEBA DE INDEX
+  .bloque-inicio{
+
+    padding:10%;
+    color: #b30000;
+    background-color: #371A39;
+    margin: 2%;
+    height: 300px;
+    width: 100%;
+  
+  }
+  .bloque-inicio p{
+    text-align: center;
+    font-size: 6em;
+  }
+*/
+.letra1{
+font-size: 6em;
+text-align: center;
+margin-top: 2%;
+background-image:  linear-gradient(to right,#371A39, #A15354,#BD7967 );
+
+}
+ 
+  .A1{
+    background-color: #b30000;
+margin: 2%;
+  margin-top: 6%;
+  }
+
+  .A2{
+    background-color:#BD7967;
+    margin: 2%;
+    height: 400px;
+    width: 100%;
+ 
+  }
+  .contpr{
+    background-color: white;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
