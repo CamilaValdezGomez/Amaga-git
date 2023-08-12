@@ -1,71 +1,73 @@
 
 $color-primario: linear-gradient(to right,#371A39, #A15354,#BD7967 );
-$color-secundario: red;
-
-body{
-  background-color: $color-primario;
-}
-
+$color-secundario:  linear-gradient(to bottom, #f5ede1, #652d45) ;
+$font-size: "SignikaNegavie";
 
 
 * {
     margin: 0px;
     padding: 0px;
-    font-family: "SignikaNegaive";
+    font-family: $font-size;
 }
 /* INDEX */
+
 header {
-    display: flex;
-    justify-content: flex-end;
-    text-align: center;
-    height: 8.7vh;
-    padding: 8px 2%;
-    background-image: $color-primario;
-}
-header .logo {
+  display: flex;
+  justify-content: flex-end;
+  text-align: center;
+  height: 8.7vh;
+  padding: 8px 2%;
+  background-image: $color-primario;
+
+  .logo {
     display: flex;
     align-items: center;
     position: absolute;
     left: 2%;
-}
-header .logo img {
-    height: 60px;
-    width: auto;
-    transition: all 0.3s;
-    margin-right: 8px;
-}
-header nav ul {
-    display: flex;
-    text-align: center;
+
+    img {
+      height: 60px;
+      width: auto;
+      transition: all 0.3s;
+      margin-right: 8px;
+    }
+  }
 }
 
-li a{
+
+nav ul {
+  display: flex;
+  text-align: center;
+
+  li a {
     list-style: none;
     text-decoration: none;
     color: rgb(70, 9, 70);
-
+  }
 }
 
-header .menu li {
-    display: inline-block;
-    padding: 16px;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
-    margin: 0 10px;
-    font-size: 22px;
-}
-header .menu li:hover {
+.menu li {
+  display: inline-block;
+  padding: 16px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  margin: 0 10px;
+  font-size: 22px;
+
+  &:hover {
     transform: scale(1.1);
+  }
 }
-.banner{
-    width: 100%;
-    height: 35vh;
-}
-.banner img{
+
+.banner {
+  width: 100%;
+  height: 35vh;
+
+  img {
     object-fit: cover;
     width: 100%;
     height: 100%;
+  }
 }
-
   /* CIERRE INDEX */
 
 /*GENERALES*/
@@ -255,7 +257,7 @@ background-image:$color-primario;
 .TituloTaller{
     margin-top: 2%;
     font-size: 40px;
-    font-family: "SignikaNegaive"
+    font-family: $font-size;
 }
 
 .Meditaciontalleres img {
@@ -290,30 +292,29 @@ background-image:$color-primario;
 /*CIERRE TALLERES*/
 
 /* FOOTER */
-  .footer-container {
-    display: flex;
-    justify-content: space-between;
-    background-color: #f2f2f2;
-    padding: 20px;
-  }
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+  background-color: #f2f2f2;
+  padding: 20px;
 
-  .footer-container div {
+  div {
     flex-basis: 30%;
   }
 
-  .footer-container h3 {
+  h3 {
     font-size: 18px;
     margin-bottom: 10px;
   }
 
-  .footer-container ul {
+  ul {
     list-style: none;
     padding: 0;
     margin: 0;
-  }
 
-  .footer-container li {
-    margin-bottom: 5px;
+    li {
+      margin-bottom: 5px;
+    }
   }
 
   .boton {
@@ -322,19 +323,21 @@ background-image:$color-primario;
     border-radius: 5px;
     cursor: pointer;
     border: none;
-  }
 
-  .boton:hover {
-    background-color: #d4d4d4;
+    &:hover {
+      background-color: #d4d4d4;
+    }
   }
 
   a {
     text-decoration: none;
     color: #333;
   }
+
   .columna {
-   margin-top: 6%;
+    margin-top: 6%;
   }
+}
   /* CIERRE FOOTER */
 
   /*PRUEBA DE INDEX
@@ -367,14 +370,14 @@ background-image: $color-primario;
  
   .A1{
   
-    background: linear-gradient(to bottom,#803A4A, #f5ede1);
+   background: $color-secundario;
     box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.3);
    margin: 2%;
   margin-top: 6%;
   }
 
   .A2{
-    background: linear-gradient(to bottom, #f5ede1, #652d45) ;
+    background: $color-secundario ;
     margin: 2%;
     height: 400px;
     width: 100%;
