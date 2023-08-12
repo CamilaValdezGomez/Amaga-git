@@ -1,3 +1,13 @@
+
+$color-primario: linear-gradient(to right,#371A39, #A15354,#BD7967 );
+$color-secundario: red;
+
+body{
+  background-color: $color-primario;
+}
+
+
+
 * {
     margin: 0px;
     padding: 0px;
@@ -10,7 +20,7 @@ header {
     text-align: center;
     height: 8.7vh;
     padding: 8px 2%;
-    background-image: linear-gradient(to right,#371A39, #A15354,#BD7967 );
+    background-image: $color-primario;
 }
 header .logo {
     display: flex;
@@ -155,7 +165,7 @@ font-size: 2em;
 .letra2{
 font-size: 6em;
 margin-top: 20px;
-background-image:  linear-gradient(to right,#371A39, #A15354,#BD7967 );
+background-image:$color-primario;
 }
 
 .letra3 {
@@ -351,7 +361,7 @@ background-image:  linear-gradient(to right,#371A39, #A15354,#BD7967 );
 font-size: 6em;
 text-align: center;
 margin-top: 2%;
-background-image:  linear-gradient(to right,#371A39, #A15354,#BD7967 );
+background-image: $color-primario;
 
 }
  

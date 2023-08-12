@@ -1,0 +1,363 @@
+body {
+  background-color: linear-gradient(to right, #371A39, #A15354, #BD7967);
+}
+
+* {
+  margin: 0px;
+  padding: 0px;
+  font-family: "SignikaNegaive";
+}
+
+/* INDEX */
+header {
+  display: flex;
+  justify-content: flex-end;
+  text-align: center;
+  height: 8.7vh;
+  padding: 8px 2%;
+  background-image: linear-gradient(to right, #371A39, #A15354, #BD7967);
+}
+
+header .logo {
+  display: flex;
+  align-items: center;
+  position: absolute;
+  left: 2%;
+}
+
+header .logo img {
+  height: 60px;
+  width: auto;
+  transition: all 0.3s;
+  margin-right: 8px;
+}
+
+header nav ul {
+  display: flex;
+  text-align: center;
+}
+
+li a {
+  list-style: none;
+  text-decoration: none;
+  color: rgb(70, 9, 70);
+}
+
+header .menu li {
+  display: inline-block;
+  padding: 16px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  margin: 0 10px;
+  font-size: 22px;
+}
+
+header .menu li:hover {
+  transform: scale(1.1);
+}
+
+.banner {
+  width: 100%;
+  height: 35vh;
+}
+
+.banner img {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+
+/* CIERRE INDEX */
+/*GENERALES*/
+p {
+  font-size: 20px;
+}
+
+h1 {
+  font-size: 10px;
+}
+
+/*cierre*/
+/* FORMULARIO DE CONTACTO */
+.container {
+  margin: 10%;
+  max-width: 100vw;
+  padding: 20px;
+  background-color: #f9f2f4;
+  border-radius: 5px;
+}
+
+.titulo-contacto {
+  color: #371A39;
+  margin: 5%;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+}
+
+h2 {
+  color: #b30000;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+form {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.columna {
+  flex: 1 1 50%;
+  padding-right: 20px;
+  box-sizing: border-box;
+}
+
+label {
+  display: block;
+  color: #b30000;
+  margin-bottom: 10px;
+}
+
+input[type=text],
+input[type=email],
+input[type=tel],
+textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.columna-segunda textarea {
+  width: 6000px;
+  height: auto;
+}
+
+input[type=submit] {
+  background-color: #b30000;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 600px) {
+  .columna {
+    flex: 1 1 100%;
+    padding-right: 0;
+  }
+}
+/* CIERRE FORMULARIO CONTACTO */
+/*APERTURA PRODUCTOS*/
+/* INCIENSOS */
+.aceites p {
+  font-size: 2em;
+}
+
+.letra2 {
+  font-size: 6em;
+  margin-top: 20px;
+  background-image: linear-gradient(to right, #371A39, #A15354, #BD7967);
+}
+
+.letra3 {
+  margin-top: 2px;
+  text-align: center;
+}
+
+.inciensoss {
+  width: 27vw;
+  text-align: center;
+  padding: 8px;
+}
+
+.tarjeta-incienso {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.contenedor-tarjeta {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.tarjeta-incienso {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+/* CIERRE INCIENSOS */
+/*ACEITES*/
+.aceites {
+  width: 23vw;
+  text-align: center;
+  padding: 2%;
+  margin: 5%;
+}
+
+.aceites p {
+  font-size: 2em;
+}
+
+.tarjeta-aceite {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.margin {
+  margin: 16px;
+}
+
+@media (min-width: 768px) {
+  .tarjeta-aceite {
+    flex-direction: row;
+    width: 48%;
+  }
+}
+/*CIERRE ACEITES*/
+/* CIERRE DE PRODUCTOS */
+/*TALLERES*/
+.TituloTaller {
+  margin-top: 2%;
+  font-size: 40px;
+  font-family: "SignikaNegaive";
+}
+
+.Meditaciontalleres img {
+  opacity: 1;
+  transition: opacity 0.5s ease-in-out;
+  border-radius: 30px;
+}
+
+.Meditaciontalleres img:hover {
+  opacity: 0.5;
+}
+
+.Meditacionenelagua img {
+  opacity: 1;
+  transition: opacity 0.5s ease-in-out;
+  border-radius: 30px;
+}
+
+.Meditacionenelagua img:hover {
+  opacity: 0.5;
+}
+
+.Meditaciontalleres {
+  text-align: right;
+  margin-top: 2%;
+  margin-bottom: 2%;
+}
+
+.Meditacionenelagua {
+  text-align: left;
+  margin-top: 2%;
+  margin-bottom: 2%;
+}
+
+/*CIERRE TALLERES*/
+/* FOOTER */
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+  background-color: #f2f2f2;
+  padding: 20px;
+}
+
+.footer-container div {
+  flex-basis: 30%;
+}
+
+.footer-container h3 {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.footer-container ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer-container li {
+  margin-bottom: 5px;
+}
+
+.boton {
+  padding: 8px 12px;
+  background-color: #eaeaea;
+  border-radius: 5px;
+  cursor: pointer;
+  border: none;
+}
+
+.boton:hover {
+  background-color: #d4d4d4;
+}
+
+a {
+  text-decoration: none;
+  color: #333;
+}
+
+.columna {
+  margin-top: 6%;
+}
+
+/* CIERRE FOOTER */
+/*PRUEBA DE INDEX
+  .bloque-inicio{
+
+    padding:10%;
+    color: #b30000;
+    background-color: #371A39;
+    margin: 2%;
+    height: 300px;
+    width: 100%;
+
+  }
+  .bloque-inicio p{
+    text-align: center;
+    font-size: 6em;
+  }
+
+
+
+    background-color: #b30000;
+*/
+.letra1 {
+  font-size: 6em;
+  text-align: center;
+  margin-top: 2%;
+  background-image: linear-gradient(to right, #371A39, #A15354, #BD7967);
+}
+
+.A1 {
+  background: linear-gradient(to bottom, #803A4A, #f5ede1);
+  box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.3);
+  margin: 2%;
+  margin-top: 6%;
+}
+
+.A2 {
+  background: linear-gradient(to bottom, #f5ede1, #652d45);
+  margin: 2%;
+  height: 400px;
+  width: 100%;
+}
+
+.contpr {
+  background-color: white;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+/*# sourceMappingURL=estilos.css.map */
