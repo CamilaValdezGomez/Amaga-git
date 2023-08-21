@@ -7,6 +7,8 @@
 /* INDEX */
 header {
   display: flex;
+  justify-content: space-between;
+  align-items: center;
   justify-content: flex-end;
   text-align: center;
   height: 8.7vh;
@@ -36,6 +38,12 @@ nav ul li a {
   color: rgb(70, 9, 70);
 }
 
+@media (max-width: 768px) {
+header {
+    justify-content: flex-end; 
+  }
+}
+  
 .menu li {
   display: inline-block;
   padding: 16px;
@@ -257,13 +265,18 @@ input[type=submit] {
 /* FOOTER */
 .footer-container {
   display: flex;
+ 
   justify-content: space-between;
   background-color: #f2f2f2;
   padding: 20px;
 }
 .footer-container div {
   flex-basis: 30%;
-}
+ 
+    flex-basis: 100%;
+    margin-bottom: 20px;
+  }
+
 .footer-container h3 {
   font-size: 18px;
   margin-bottom: 10px;
@@ -274,7 +287,7 @@ input[type=submit] {
   margin: 0;
 }
 .footer-container ul li {
-  margin-bottom: 5px;
+  margin-bottom: 3px;
 }
 .footer-container .boton {
   padding: 8px 12px;
@@ -292,6 +305,12 @@ input[type=submit] {
 }
 .footer-container .columna {
   margin-top: 6%;
+}
+
+@media (max-width: 768px) {
+  .footer-container div {
+    flex-basis: 100%;
+  }
 }
 
 /* CIERRE FOOTER */
